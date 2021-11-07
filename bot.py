@@ -31,7 +31,7 @@ async def handler(event):
     r = requests.get(s).json()
     z=r['data']["item_id"]
     markup  = client.build_reply_markup(Button.url("⚡ PDISK LINK ⚡",f"http://m.pdisk.net/share-video?videoid={z}"))
-    await client.send_message(chat, "𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭..! \n 𝙏𝙄𝙏𝙇𝙀 : {links} \n 𝙐𝙍𝙇 : <code>http://m.pdisk.net/share-video?videoid={z}</code> \n\n 𝙎𝙏𝘼𝙏𝙐𝙎 : <code>Processing...</code> \n\n Link Will Be Active Within 5-10 Mins..! \n\n @POWERROCKERS \n @TNFILMBOXOFFICIAL", buttons=markup)
+    await client.send_message(chat, "𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭..! \n 𝙏𝙄𝙏𝙇𝙀 : {links} \n 𝙐𝙍𝙇 : <code>http://m.pdisk.net/share-video?videoid={z}</code> \n\n 𝙎𝙏𝘼𝙏𝙐𝙎 : <code>Processing...</code> \n\n Link Will Be Active Within 5-10 Mins..! \n\n @KOT_BOTS \n @KOT_REPORS", buttons=markup)
 
 @client.on(events.NewMessage(pattern='/telepdisk'))
 async def handler(event):
@@ -58,7 +58,7 @@ async def handler(event):
    # await event.delete()
    # client.delete_messages()
     markup  = client.build_reply_markup(Button.url("⚡ PDISK LINK ⚡",f"http://m.pdisk.net/share-video?videoid={f}"))
-    await client.send_message(chat, "𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭..! \n 𝙏𝙄𝙏𝙇𝙀 : {links} \n 𝙐𝙍𝙇 : <code>http://m.pdisk.net/share-video?videoid={f}</code> \n\n 𝙎𝙏𝘼𝙏𝙐𝙎 : <code>Processing...</code> \n\n Link Will Be Active Within 5-10 Mins..! \n\n @POWERROCKERS \n @TNFILMBOXOFFICIAL ", buttons=markup)
+    await client.send_message(chat, "𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐞𝐝 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭..! \n 𝙏𝙄𝙏𝙇𝙀 : {links} \n 𝙐𝙍𝙇 : <code>http://m.pdisk.net/share-video?videoid={f}</code> \n\n 𝙎𝙏𝘼𝙏𝙐𝙎 : <code>Processing...</code> \n\n Link Will Be Active Within 5-10 Mins..! \n\n @KOT_BOTS \n @KOT_REPORS ", buttons=markup)
     #os.remove(f"/app/templates/download/{links}")  
 
 @client.on(events.NewMessage(pattern='(?i)/upload'))
